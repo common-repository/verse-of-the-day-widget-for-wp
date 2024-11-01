@@ -1,0 +1,63 @@
+.widget {
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
+  border-radius: 0.625em;
+}
+.widget img {
+  max-width: 100%;
+  border-radius: 0.625em;
+}
+.verse {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+#verse-widget {
+  border: 0 solid red;
+  width: 100%;
+  height: 18.75em; /* Set a height for the widget */
+  flex-grow: 1; /* Allow the widget to grow within the flex container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container1 {
+  display: flex;
+  flex-direction: row; /* Row layout */
+  width: 100%; /* Ensure full width */
+  padding: 1.25em;
+  padding-bottom: 0;
+  padding-top: 1em;
+  border: 0 solid rgb(55, 0, 128);
+  border-radius: 0.625em;
+  background-color: #f9f9f9;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure image inside the widget fills the space */
+#container1 img {
+  width: 100%; /* Image should fill the width of its container */
+  height: 100%; /* Maintain aspect ratio for responsiveness */
+  object-fit: cover; /* Make the image cover the entire widget */
+  border-radius: 0.3125em; /* Optional: give the image some rounded corners */
+}
+
+#container2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.625em;
+  border: 0 solid green;
+  border-radius: 0.625em;
+  background-color: #f9f9f9;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#nature-photo {
+  width: 100%; /* Make image fit its parent container */
+  height: auto; /* Maintain aspect ratio */
+}
